@@ -1,0 +1,8 @@
+SELECT 
+  user_id,
+  user_zipcode_current,
+  birthdate,
+  gender
+FROM analytics.user
+WHERE
+  first_verified_at IS NOT NULL
