@@ -1,0 +1,13 @@
+SELECT 
+  order_id,
+  user_id,
+  delivered_at AS delivery_datetime,
+  minutes_to_delivery AS wait_time,
+  promo_credit,
+  charge_amount AS order_price_total,
+  promo_code,
+  payment_method
+  
+FROM analytics.order
+WHERE
+  delivered_at > '2020-01-01'
