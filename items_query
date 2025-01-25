@@ -1,0 +1,13 @@
+SELECT 
+  order_id,
+  user_id,
+  product_name,
+  catalog_id,
+  type_name AS product_category,
+  subtype_name AS product_subcategory,
+  category_name AS strain_type,
+  price,
+  quantity
+  
+FROM analytics.line_item_sales
+WHERE reporting_day > '2019-12-15'
